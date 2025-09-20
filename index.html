@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CAT Mock Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lobby">
+  <h1>Mock Tests</h1>
+  <div id="tests-list"></div>
+  <button id="admin-open" class="primary hidden">Curate Mocks</button>
+</div>
+
+<div id="test-screen" class="hidden">
+  <h2 id="test-title"></h2>
+  <div id="timer"></div>
+  <div id="question-area"></div>
+  <div class="controls">
+    <button id="prev-btn">Prev</button>
+    <button id="next-btn">Next</button>
+    <button id="submit-btn">Submit</button>
+    <button id="quit-btn">Quit</button>
+  </div>
+</div>
+
+<div id="result-screen" class="hidden">
+  <h2>Test Result</h2>
+  <div id="result-summary"></div>
+  <button id="back-home">Back to Lobby</button>
+</div>
+
+<div id="admin-modal" class="hidden">
+  <h3>Curate Tests</h3>
+  <div id="admin-list"></div>
+  <button id="add-test">Add Test</button>
+  <button id="export-json">Export JSON</button>
+  <button id="reset-json">Reset to Sample</button>
+  <button id="close-admin">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
